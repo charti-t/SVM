@@ -28,9 +28,12 @@ from sklearn.metrics import accuracy_score
 accuracy = accuracy_score(pred, labels_test)
 print(accuracy)
 
-a = 0
+a, b = 0
 for item in pred:
 	if item == 1:
 		a += 1
-print a
+	else:
+		b += 1
+print "Chris predicted msg :", a
+print "Sara  predicted msg :", b
 
